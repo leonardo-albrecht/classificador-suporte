@@ -32,3 +32,11 @@ def test_nota_fiscal_nao_e_cadastro():
     )
     assert resultado.categoria != "Cadastro"
     assert resultado.urgencia != "Baixa"
+
+def test_contas_a_receber():
+    resultado = classificar_ticket(
+        titulo="Financeiro contas a receber",
+        descricao="Contas a receber com erro, prazo de entrega hoje"
+    )
+    assert resultado.categoria == "Financeiro"
+    assert resultado.urgencia == "Critica"

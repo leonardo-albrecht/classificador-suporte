@@ -20,6 +20,7 @@ Fiscal, Estoque, Compras e Cadastro.
 
 EXEMPLOS (few-shot):
 Título: "NF rejeitada SEFAZ erro 539" | Descrição: "prazo hoje" → Nota Fiscal | Critica
+Título: "Financeiro contas a receber" | Descrição: "prazo hoje" → Financeiro | Critica
 Título: "Estoque negativo produto 1052" | Descrição: "divergência física" → Estoque | Alta  
 Título: "Pedido compra parado 3 dias" | Descrição: "sem aprovação" → Compras | Media
 Título: "Novo usuário sistema" | Descrição: "iniciar semana que vem" → Cadastro | Baixa
@@ -42,6 +43,7 @@ CATEGORIAS:
 - Estoque: saldo, inventário, movimentação, divergência física
 - Compras: pedidos, fornecedores, cotações, aprovações
 - Cadastro: clientes, produtos, usuários, configurações
+- Financeiro: contas a receber, contas a pagar, financeiro
 - Outros: qualquer coisa fora das categorias acima
 
 URGÊNCIA:

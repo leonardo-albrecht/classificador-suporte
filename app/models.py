@@ -6,7 +6,7 @@ class TicketRequest(BaseModel):
     descricao: str
 
 class TicketClassificado(BaseModel):
-    categoria: Literal["Nota Fiscal", "Estoque", "Compras", "Cadastro", "Outros"]
+    categoria: Literal["Nota Fiscal", "Estoque", "Compras", "Cadastro","Financeiro",  "Outros"]
     urgencia: Literal["Baixa", "Media", "Alta", "Critica"]
     resumo: str
     resposta_sugerida: str
